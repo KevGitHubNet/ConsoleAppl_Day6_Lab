@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppl_Day6_Lab", "ConsoleAppl_Day6_Lab\ConsoleAppl_Day6_Lab.csproj", "{1CA87117-0E4F-4814-8C64-AAB1D3EE9566}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA87117-0E4F-4814-8C64-AAB1D3EE9566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA87117-0E4F-4814-8C64-AAB1D3EE9566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA87117-0E4F-4814-8C64-AAB1D3EE9566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA87117-0E4F-4814-8C64-AAB1D3EE9566}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
