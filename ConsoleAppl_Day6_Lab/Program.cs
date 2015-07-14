@@ -12,23 +12,23 @@ namespace ConsoleAppl_Day6_Lab
         {
             string str = "";
             List<Ninjas> squad = new List<Ninjas>();
-
+            
             do
             {
                 Console.WriteLine("Please enter the name of a student.");
                 squad.Add(new Ninjas(Console.ReadLine()));
-                Console.WriteLine("Press enter to add another student or press any key then enter to move forward.");
+                Console.WriteLine("Press enter to add another student or press any key then enter to move forward.");//pressing any key other than <Enter> exits the loop because 'while' condition is met
                 str = Console.ReadLine();
-            } while (string.IsNullOrEmpty(str));
+            } while (string.IsNullOrEmpty(str));//check if string is empty (pressing <Enter>) and if so loop again
 
             for (int x = 0; x < squad.Count(); x++ )
             {
-                Console.WriteLine("{0} Please enter the number of programs you've completed.", squad[x].Name);
+                Console.WriteLine("{0} Please enter the number of programs you've completed.", squad[x].Name);//get
                 int prog = int.Parse(Console.ReadLine());
 
                 squad[x].levelUp(prog);
 
-                Console.WriteLine("{0} Please enter the number of people you've helped.", squad[x].Name);
+                Console.WriteLine("{0} Please enter the number of people you've helped.", squad[x].Name);//get
                 prog = int.Parse(Console.ReadLine()) * 2;
 
                 squad[x].levelUp(prog);
@@ -45,12 +45,12 @@ namespace ConsoleAppl_Day6_Lab
         public string Name { get; set; }
         int level = 0;
         string rank;
-
+       
         public Ninjas(string n)
         {
             rank = "Beginner";
             level = 0;
-            Name = n;
+            Name = n;//set
 
         }
         public void levelUp(int c)
@@ -59,6 +59,7 @@ namespace ConsoleAppl_Day6_Lab
             getRank(level);
         }
         private void getRank(int lvl)
+           
         {
             if (lvl > 0 && lvl < 5)
             {
